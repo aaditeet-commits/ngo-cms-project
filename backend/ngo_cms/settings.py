@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=0xii((1)zxwhjrbx4g*xvdawbgzu_9#ow_xlh6kq*m1!ffs$p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -128,6 +128,10 @@ STATIC_URL = 'static/'
 # CORS Settings
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "https://your-vercel-domain.vercel.app",
+]
+CSRF_TRUSTED_ORIGINS = [
+    "https://your-vercel-domain.vercel.app",
 ]
 
 # REST Framework Settings
