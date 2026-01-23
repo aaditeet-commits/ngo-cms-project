@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY
 # -----------------------------
 SECRET_KEY = 'django-insecure-=0xii((1)zxwhjrbx4g*xvdawbgzu_9#ow_xlh6kq*m1!ffs$p'
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['ngo-cms-project.onrender.com']
 
 # -----------------------------
