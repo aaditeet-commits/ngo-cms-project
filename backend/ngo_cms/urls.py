@@ -19,10 +19,11 @@ from django.urls import path, include
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("Welcome to NGO CMS backend!")
+    return HttpResponse("Welcome to NGO CMS!")
 
 urlpatterns = [
-    path('', home),               # gets / and shows text
+    path('', home, name="home"),       # ✔ root URL
     path('admin/', admin.site.urls),
-    path('api/auth/', include('accounts.urls')),  # example
+    path('api/auth/', include('accounts.urls')),  # if you have this
 ]
+
