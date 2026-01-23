@@ -10,7 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
-from pathlib import Path
+from pathlib import Path 
+import os
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "frontend/build/static"),
