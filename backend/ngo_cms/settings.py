@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-=0xii((1)zxwhjrbx4g*xvdawbgzu_9#ow_xlh6kq*m1!ffs$p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -147,3 +147,6 @@ SIMPLE_JWT = {
 
 # Custom User Model
 AUTH_USER_MODEL = 'accounts.User'
+
+# Static files for production
+STATIC_ROOT = BASE_DIR / 'staticfiles'
