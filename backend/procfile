@@ -1,1 +1,2 @@
-web: gunicorn ngo_cms.wsgi
+web: gunicorn backend.ngo_cms.wsgi
+
