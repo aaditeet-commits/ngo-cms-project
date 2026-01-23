@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-=0xii((1)zxwhjrbx4g*xvdawbgzu_9#ow_xlh6kq*m1!ffs$p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['ngo-cms-project.onrender.com']
+
 
 
 # Application definition
@@ -128,8 +129,9 @@ STATIC_URL = 'static/'
 # CORS Settings
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "https://your-vercel-domain.vercel.app",
+    "https://ngo-cms-project-frontend.vercel.app",  # Add this after frontend deployment
 ]
+CORS_ALLOW_ALL_ORIGINS = True  # Add this line for testing
 CSRF_TRUSTED_ORIGINS = [
     "https://your-vercel-domain.vercel.app",
 ]
@@ -153,4 +155,5 @@ SIMPLE_JWT = {
 AUTH_USER_MODEL = 'accounts.User'
 
 # Static files for production
+STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
